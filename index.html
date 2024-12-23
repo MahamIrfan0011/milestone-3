@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Resume Form</h1>
+    </header>
+
+    <form id="resume-form">
+        <section>
+            <h2>Personal Information</h2>
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" placeholder="Enter your address"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="profile-pic">Profile Picture:</label>
+                <input type="file" id="profile-pic" accept="image/*">
+                <img id="profile-pic-preview" src="" alt="Profile Picture" class="hidden">
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <input type="text" id="education" placeholder="Enter your education details" required>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <input type="text" id="skills" placeholder="Enter your skills (comma separated)">
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <textarea id="experience" placeholder="Enter your experience details"></textarea>
+        </section>
+
+        <button type="button" id="generate-resume">Generate Resume</button>
+    </form>
+
+    <div class="bubbles">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
